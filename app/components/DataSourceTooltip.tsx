@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { useDevMode } from '@/context/DevModeContext'; // 1. Import the state
+import { useDevMode } from '@/context/DevModeContext';
 
 interface Props {
   source: string;
@@ -11,8 +11,6 @@ interface Props {
 export default function DataSourceTooltip({ source, tech, children }: Props) {
   const [coords, setCoords] = useState({ x: 0, y: 0 });
   const [visible, setVisible] = useState(false);
-  
-  // 2. Read the global state
   const { isDevMode } = useDevMode();
 
   return (

@@ -65,7 +65,6 @@ export default async function Home() {
         <DataSourceTooltip source="Contentful CMS" tech="GraphQL & CSS Grid">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[350px]">
             {games.map((game: any, index: number) => {
-              // Make the first game massive to draw the eye
               const isFeatured = index === 0;
               // Simple date formatter (e.g., "2023" or "Oct 2023")
               const releaseYear = game.releaseDate ? new Date(game.releaseDate).getFullYear() : 'TBA';
