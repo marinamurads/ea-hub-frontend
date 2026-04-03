@@ -25,9 +25,10 @@ async function getCmsData(slug: string) {
 }
 
 async function getLiveStats(slug: string) {
+  const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3001';
   try {
     // Swapped revalidate for 'no-store' to force a live network request
-    const res = await fetch(`http://localhost:3001/api/games/${slug}`, { cache: 'no-store' });
+    const res = await fetch(`${backendUrl}/api/games/${slug}`, { cache: 'no-store' });
     return res.ok ? await res.json() : null;
   } catch (error) { 
     console.error("Backend fetch error:", error);
