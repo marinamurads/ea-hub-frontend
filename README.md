@@ -23,13 +23,15 @@ A high-performance, component-driven frontend built to display live gaming stati
    ```bash
    npm install
 2. Create a .env.local in the root directory:
+    ```bash
     CONTENTFUL_SPACE_ID=your_space_id
     CONTENTFUL_ACCESS_TOKEN=your_access_token
     NEXT_PUBLIC_BACKEND_URL=http://localhost:3001
 3. Run the development server:
+    ```bash
     npm run dev
 
 ## 🧪 Testing
-
 Run the Jest testing suite to verify component rendering and state management:
+    ```bash
     npm run test
