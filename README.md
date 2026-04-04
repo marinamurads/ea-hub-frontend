@@ -2,7 +2,7 @@
 
 A high-performance, component-driven frontend built to display live gaming statistics and dynamic content. This application consumes a decoupled NestJS backend and a Contentful GraphQL API to deliver a premium, responsive user interface.
 
-### 🔗 [View Live Deployment](https://ea-hub-frontend-g72v.vercel.app/)
+### 🔗 [View Live Deployment](https://ea-hub-frontend.vercel.app/)
 
 ## 🛠️ Tech Stack
 - **Framework:** Next.js 16 (App Router)
