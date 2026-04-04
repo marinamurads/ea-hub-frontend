@@ -33,5 +33,5 @@ A high-performance, component-driven frontend built to display live gaming stati
 
 ## 🧪 Testing
 Run the Jest testing suite to verify component rendering and state management:
-    ```bash
+```bash
     npm run test
