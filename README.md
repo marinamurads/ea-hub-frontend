@@ -22,3 +22,12 @@ A high-performance, component-driven frontend built to display live gaming stati
 1. Clone the repository and install dependencies:
    ```bash
    npm install
+2. Create a .env file in the root directory:
+    RAWG_API_KEY=your_rawg_api_key
+3. Run the development server:
+    npm run start:dev
+
+## 🧪 Testing
+
+Run the Jest testing suite to verify service mapping and controller dependency injection:
+    npm run test
